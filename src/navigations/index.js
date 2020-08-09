@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from '../redux/store';
 import AppNavigator from './app-navigator';
+import { Colors } from '../utils';
 
 class RootStack extends Component {
     render() {
@@ -11,7 +12,7 @@ class RootStack extends Component {
             <SafeAreaView style={{ flex: 1 }}>
                 <Provider store={store}>
                     <PersistGate store={store} persistor={persistor}>
-                        <StatusBar barStyle="light-content" backgroundColor="#EAC153" />
+                        <StatusBar barStyle="light-content" backgroundColor={Colors.COLOR1} />
                         <AppNavigator />
                     </PersistGate>
                 </Provider>
