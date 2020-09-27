@@ -1,14 +1,14 @@
+import { Typography } from "../../utils";
+
 const initialState = {
-    isLoading: false,
-    isConnected: false
+    increment: 0
 }
 export default contacts = (state = initialState, action) => {
     switch (action.type) {
-
-        case 'GET_STATUS_INTERNET':
+        case Typography.REWARD_INCREMENT_CHECK:
             return {
                 ...state,
-                isConnected: action.payload
+                increment: action.payload
             }
         default:
             return state;

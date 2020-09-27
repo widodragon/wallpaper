@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "916893367688",
+    "firebase_url": "https://batourapp-2ce8b.firebaseio.com",
+    "project_id": "batourapp-2ce8b",
+    "storage_bucket": "batourapp-2ce8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916893367688:android:973108c5835c68b9324e3d",
+        "android_client_info": {
+          "package_name": "com.batour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916893367688-do2rtgaauk9nnjme6muo62ncgqv0h8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC23ERameESEiFJJl4qMDFwnQL_A8O60d0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916893367688-do2rtgaauk9nnjme6muo62ncgqv0h8p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916893367688:android:1ac2a9bc3e5dcb62324e3d",
+        "android_client_info": {
+          "package_name": "com.freewallpaper2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916893367688-do2rtgaauk9nnjme6muo62ncgqv0h8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC23ERameESEiFJJl4qMDFwnQL_A8O60d0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916893367688-do2rtgaauk9nnjme6muo62ncgqv0h8p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9804721901768342~5315570278"
+    }
+  ],
+  "configuration_version": "1"
+}

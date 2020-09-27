@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import {createLogger} from "redux-logger";
 import promiseMiddleware from 'redux-promise-middleware';
 import { persistStore, persistReducer } from 'redux-persist';
-import AsyncStorage from '@react-native-community/async-storage';
+import { AsyncStorage } from 'react-native';
 import reducers from './reducers';
 const logger = createLogger({});
 const persistConfig = {

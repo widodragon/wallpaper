@@ -7,6 +7,8 @@ import 'react-native-gesture-handler';
 import DashboardScreen from '../scenes/dashboard';
 import CategoryScreen from '../scenes/category';
 import DetailScreen from '../scenes/detail';
+import CustomizedDrawer from '../components/navigation/CustomizedDrawer';
+import SplashScreen from '../scenes/splash';
 
 const IsSecure = (WrappedComponent) => {
   return class ComponentHelper extends Component {
@@ -21,6 +23,12 @@ const IsSecure = (WrappedComponent) => {
 }
 
 export const StackNavigator = createStackNavigator({
+  SplashScreen: {
+    screen: IsSecure(SplashScreen),
+    navigationOptions: {
+      headerShown: false
+    }
+  },
   DashboardScreen: {
     screen: IsSecure(DashboardScreen),
     navigationOptions: {
@@ -42,25 +50,26 @@ export const StackNavigator = createStackNavigator({
 });
 
 export const DrawerNavigator = createDrawerNavigator({
-  DashboardScreen: {
+  "Dashboard": {
     screen: StackNavigator,
     navigationOptions: {
       headerShown: false
     }
   },
-  CategoryScreen: {
-    screen: IsSecure(CategoryScreen),
-    navigationOptions: {
-      headerShown: false
-    }
-  },
+  // "Category": {
+  //   screen: IsSecure(CategoryScreen),
+  //   navigationOptions: {
+  //     headerShown: false
+  //   }
+  // },
 }, {
   hideStatusBar: false,
   drawerBackgroundColor: 'rgba(255,255,255,.9)',
   contentOptions: {
-    activeTintColor: '#fff',
-    activeBackgroundColor: '#6b52ae',
+    activeTintColor: 'black',
+    activeBackgroundColor: "#d0d5d9"
   },
+  contentComponent: CustomizedDrawer
 });
 
 const AppNavigator = createAppContainer(DrawerNavigator);

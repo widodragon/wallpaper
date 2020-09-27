@@ -1,6 +1,8 @@
-export const setConnection = (status) => {
-    return {
-      type: 'GET_STATUS_INTERNET',
-      payload: status
-    }
+import { Typography } from "../../utils"
+
+export const setIncrementBanner = (state) => {
+  return {
+    type: Typography.REWARD_INCREMENT_CHECK,
+    payload: state
   }
+}

@@ -8,3 +8,5 @@ export const category_data = [
         name:"Red Flower"
     }
 ];
+
+export const TITLE = "Dragon Ball Wallpaper";

@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { hp, wp } from '../../utils/responsive';
+import { Spinner } from "native-base"
 class ProgressiveImage extends React.Component {
     render() {
         const {
@@ -12,12 +13,7 @@ class ProgressiveImage extends React.Component {
         } = this.props;
         return (
             <View style={styles.container}>
-                <Image
-                    {...props}
-                    source={thumbnailSource}
-                    style={{width:"100%", height:hp(30)}}
-                    resizeMode="cover"
-                />
+                <Spinner style={{ width: "100%", height: hp(30) }} color="red" />
                 <Image
                     {...props}
                     source={source}

@@ -1,3 +1,3 @@
-export const COLOR1 = "#0f0f0f"; 
-export const COLOR2 = "#0f0f0f";
-export const COLOR3 = "#d4d2d2";
+export const COLOR1 = "#020b3b"; 
+export const COLOR2 = "#020b3b";
+export const COLOR3 = "#edeef2";
